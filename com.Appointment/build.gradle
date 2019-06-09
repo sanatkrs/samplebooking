@@ -8,6 +8,8 @@
 
 // Apply the java-library plugin to add support for Java Library
 apply plugin: 'java-library'
+apply plugin: 'java'
+apply plugin: 'war'
 
 // In this section you declare where to find the dependencies of your project
 repositories {
@@ -44,8 +46,5 @@ gradleVersion '5.4.1'
 
 }
 
-task execute(type:JavaExec) {
-   main = mainClass
-   classpath = sourceSets.main.runtimeClasspath
-}
+
 
