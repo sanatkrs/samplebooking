@@ -44,3 +44,8 @@ gradleVersion '5.4.1'
 
 }
 
+task execute(type:JavaExec) {
+   main = mainClass
+   classpath = sourceSets.main.runtimeClasspath
+}
+
