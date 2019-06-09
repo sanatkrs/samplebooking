@@ -39,6 +39,7 @@ dependencies {
 
 task wrapper(type: Wrapper){
 
+group 'Wrapper'
 gradleVersion '5.4.1'
 
 }
